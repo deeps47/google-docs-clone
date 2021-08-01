@@ -3,7 +3,7 @@ import Icon from "@material-tailwind/react/Icon"
 
 function Header() {   
     return (
-        <header className="sticky top-0 z-50 flex items-center px-4 py-2
+        <header className="sticky top-0 z-50 flex items-center px-4 h-16
         shadow-md bg-white">
             <Button
             color="gray"
@@ -20,7 +20,7 @@ function Header() {
                 Docs
             </h1>
 
-            <div className="mx-5 md:mx-20 flex flex-grow items-center px-5 py-2 
+            <div className="mx-60 md:mx-40 flex flex-grow items-center px-5 py-2 
             bg-gray-200 text-gray-600 rounded-lg focus-within:text-gray-600 focus-within:shadow-md">
                 <Icon name="search" size="3xl" color="gray"/>
                 <input 
