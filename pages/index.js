@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Icon from "@material-tailwind/react/Icon"
 import Button from "@material-tailwind/react/Button"
 import Image from "next/image"
+import DocumentRow from '../components/DocumentRow'
 
 
 export default function Home() {
@@ -44,6 +45,12 @@ export default function Home() {
             <p className='mr-12'>Date Created</p>
             <Icon name='folder' size='3xl' color='gray' />
           </div>
+          <DocumentRow 
+          key="1"
+          id="1"
+          filename="test"
+          // date= 
+          />
         </div>
       </section>
     </div>
