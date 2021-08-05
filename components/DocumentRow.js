@@ -4,7 +4,7 @@ import {useRouter} from 'next/dist/client/router'
 const DocumentRow = ({id,filename,date}) => {
     const router = useRouter()
     return (
-        <div className='cursor-pointer text-sm text-gray-700 p-4 flex items-center rounded-lg hover:bg-gray-100'>
+        <div onClick={()=>router.push(`/doc/${id}`)} className='cursor-pointer text-sm text-gray-700 p-4 flex items-center rounded-lg hover:bg-gray-100'>
             <Icon name='article' size='3xl' color='blue'  />
             <p className='flex-grow pl-5 w-10 pr-10 truncate'>{filename}</p>
             <p className='pr-5 text-sm'>{date?.toDate().toLocaleDateString()}</p>
